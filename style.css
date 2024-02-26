@@ -1,0 +1,97 @@
+:root {
+    /* Primary */
+    --Green: hsl(75, 94%, 57%);
+    /* Neutral */
+    --Whitecolor: hsl(0, 0%, 100%);
+    --Greycolor: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--OffBlack);
+}
+
+.base {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 380px;
+    max-height: 600px;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: var(--DarkGrey);
+}
+
+.container .social-profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--Whitecolor);
+}
+
+.container .social-profile-content img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 1.8rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: .9rem;
+    color: var(--Green);
+    margin-top: 12px;
+}
+
+p {
+    font-size: 14px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-button button {
+    margin: .5rem 0;
+    padding: .5rem 0;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--Greycolor);
+    color: var(--Whitecolor);
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+.container-button button:hover {
+    background-color: var(--Green);
+    color: var(--OffBlack);
+    cursor: pointer;
+}
+
+@media (max-width:400px) {
+    body {
+        padding: 0 1.7rem;
+    }
+}
